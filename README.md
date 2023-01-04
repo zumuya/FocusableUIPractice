@@ -2,4 +2,4 @@
 
 Practice for focusable views in SwiftUI.
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.gif)

@@ -30,5 +30,5 @@ class Folder: ObservableObject, OutputDescriptionCommandTarget, Identifiable
 	}
 	var id: UUID
 	var child: Folder?
-	func outputDescription() { print("file “\(name)”") }
+	func outputDescription() { print("folder “\(name)”") }
 }

@@ -1,2 +1,3 @@
 # FocusableUIPractice
  
+![Screenshot](screenshot.png)

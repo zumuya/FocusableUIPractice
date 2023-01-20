@@ -20,7 +20,7 @@ import SwiftUI
 
 struct FolderView: View
 {
-	@StateObject var folder: Folder
+	@ObservedObject var folder: Folder
 	@FocusState private var isFocused: Bool
 	
 	var body: some View

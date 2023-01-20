@@ -22,16 +22,16 @@ import SwiftUI
 
 struct OutputDescriptionButton: View
 {
-	@FocusedValue(\.outputDescriptionCommandTarget) var outputDescriptionCommandTarget
+	@FocusedValue(\.outputDescriptionCommandTarget) var target
 	
 	var body: some View
 	{
 		Button {
-			outputDescriptionCommandTarget?.outputDescription()
+			target?.outputDescription()
 		} label: {
 			Label("Output Description", systemImage: "pawprint")
 		}
-		.disabled(outputDescriptionCommandTarget == nil)
+		.disabled(target == nil)
 	}
 }
 

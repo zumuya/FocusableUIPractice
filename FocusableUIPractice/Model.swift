@@ -18,7 +18,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import Foundation
 
-class Folder: ObservableObject, OutputDescriptionCommandTarget, Identifiable
+class Folder: ObservableObject, Identifiable
 {
 	@Published var name: String
 	
@@ -30,5 +30,8 @@ class Folder: ObservableObject, OutputDescriptionCommandTarget, Identifiable
 	}
 	var id: UUID
 	var child: Folder?
+}
+extension Folder: OutputDescriptionCommandTarget
+{
 	func outputDescription() { print("folder “\(name)”") }
 }
